@@ -1,0 +1,318 @@
+/* Default Selector */
+* {
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+}
+html, body {
+    /*background-color:rgb(8, 37, 65);*/
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    font-size: 2.5vw;
+}
+h2 {
+    font-size: 2vw;
+}
+h3 {
+    font-size: 1.67vw;
+}
+h4 {
+    font-size: 1.5vw;
+}
+h5 {
+    font-size: 1.33vw;
+}
+h6 {
+    font-size: 1.17vw;
+}
+
+/* Top Navigation */
+#cari {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.navi {
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    /* background-color:rgb(8, 37, 65);*/
+    background-color: transparent;
+    font-size: 1.5vw;
+}
+.navi a {
+    float:left;
+    display: block;
+    padding: 1.5vw 1.3vw;
+    text-decoration: none;
+    color: white;
+}
+.navi a:hover {
+    background-color: rgb(6, 27, 47);
+}
+.cari {
+    font-family: 'Raleway', sans-serif;
+    float: right;
+    justify-content: center;
+    /*padding: 0.8vw 1.3vw;*/
+    width: 20%;
+    background-color: transparent;
+}
+.cari button {
+    border: 0px solid;
+    background-color: rgb(12, 46, 78);
+    width: auto;
+    height: 3.4vw;
+    color: white;
+}
+.cari input[type="text"] {
+    background-image: url('/assets/img/searchitam.png');
+    background-repeat: no-repeat;
+    background-position: 0.6vw center;
+    background-size: 9%;
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-bottom: 3%;
+    border: 0px solid transparent;
+    height: auto;
+}
+
+/* Header */
+.kepala {
+    font-family: 'Raleway', sans-serif;
+    background: url('/assets/img/bg.jpg') no-repeat center scroll;
+    background-size: cover;
+    height: 100%;
+    /*max-width: 100%;
+    height: auto;
+    background-color:rgb(8, 37, 65);
+    padding: 2vw;
+    margin-bottom: 1.5vw; */
+}
+#konten-kepala {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.kepala a {
+    text-decoration: none;
+}
+.kepala a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+.kepala a:hover {
+    opacity: 0.3;
+}
+.flex-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-img a:hover {
+    opacity: 0.5;
+}
+.flex-img img{
+    max-width: 4vw;
+    padding-left: 1vw;
+}
+#judul {
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+}
+#subjudul {
+    font-family: 'Sacramento', cursive;
+    font-size: 3vw;
+    padding-top: 0.2vw;
+    color: white;
+    text-align: center;
+    padding-bottom: 1.4vw;
+}
+
+/* Main Content */
+
+.control-main {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+}
+.control-main h1 {
+    text-align: center;
+    padding-bottom: 0.5%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main {
+    border-top: thin solid white;
+    padding-top: 2%;
+    display: block;
+    max-width: 60%;
+}
+.main a {
+    text-decoration: none;
+    color: white;
+} 
+.main a:link, a:visited {
+    text-decoration: none;
+    justify-content: center;
+}
+.main a:hover {
+    color : rgb(8, 37, 65);
+}
+.tanggal {
+    width: 20%;
+    float: left;
+    padding: 2vw 2vw;
+    background-color: rgb(49, 161, 246);
+    text-align: center;
+    font-size: 1.5vw;
+}
+.judulpos {
+    width: 80%;
+    float: left;
+    line-height: 2.7vw;
+    padding-top: 0vw;
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 1vw; 
+    /*background-color: rgb(35, 37, 39);*/ 
+    border-bottom: thin solid black;
+}
+.judulpos p {
+    font-size: 1vw;
+    line-height: 1.7vw;
+    text-align: justify;
+}
+/* Postingan */
+#dekor-kontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 2vw;
+    height: 1vw;
+}
+#d-1 {
+    flex:25%;
+    color: transparent;
+    background-color: rgb(231, 37, 37);
+}
+#d-2 {
+    flex:45%;
+    color: transparent;
+    background-color: rgb(0, 66, 128);
+}
+#d-3 {
+    flex:30%;
+    color: transparent;
+    background-color: rgb(17, 146, 13);
+}
+.window-post {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    padding: 1vw 1vw 1vw 1vw;
+}
+.main-post {
+    flex: 70%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.recent-post {
+    flex: 30%;
+}
+.recent-post h3 {
+    text-align: center;
+}
+#judul-post {
+    text-align: center;
+    line-height: 3vw;
+    display: block;
+    border-bottom: thin solid black;
+}
+#judul-post h1 {
+    font-size: 4vw;
+    line-height: 3.3vw;
+}
+#judul-post h6 {
+    line-height: 1.5vw;
+}
+#isi-post {
+    padding-top: 2vw;
+    text-align: justify;
+    display: block;
+}
+
+/* Post 
+.konten {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    padding: 1.5vw; 
+}
+.konten p:first-of-type {
+    text-indent: 0px;
+}
+.konten p {
+    text-indent: 2vw;
+    text-align: justify;
+}
+.konten img {
+    max-width: 100%;
+}
+.title {
+    padding-bottom: 1.5vw;
+    line-height: 2.3vw;
+}
+*/
+/* Pagination */
+.laman {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1vw 1vw;
+    color: white;
+}
+.pg {
+    font-size: 1vw;
+    padding: 1vw 1vw 1vw 1vw;
+    margin: 0.5vw 0.5vw;
+    background-color: rgb(8, 37, 65);
+}
+
+.pg a {
+    color: white;
+    text-decoration: none;
+}
+
+.pg a:hover {
+    color: black;
+}
+.pg:hover {
+    background-color: white;
+    color: black;
+}
+.pg:hover a {
+    color: black;
+}
+
+
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+    /*background-color:rgb(8, 37, 65);*/
+    text-align: center;
+    padding: 2vw 2vw;
+    font-size: 1vw;
+} 

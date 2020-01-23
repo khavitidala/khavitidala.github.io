@@ -1,0 +1,35 @@
+<script>
+function tampil() {
+    if (document.getElementById("cari").style.display=="none") {
+        document.getElementById("cari").style.display="block";
+        document.getElementsByName("nyari").innerHTML="Batal Mencari";
+    } else {
+        document.getElementById("cari").style.display="none";
+
+    }
+}
+</script>
+<div id="cari">
+    <script async src="https://cse.google.com/cse.js?cx=017547081945986719728:tyoyjbvdc34"></script>
+    <div class="gcse-search"></div>
+    <!--<form action="" method="GET">
+    <input type="text" placeholder="Cari...">
+</form>-->
+</div>
+<div class="kepala">
+<div class="navi">
+    <a href="/index.html">Beranda</a>
+    <a href="#">Tentang</a>
+    <a href="#">Kategori</a>
+    <a style="cursor: pointer;" onclick="tampil()" name="nyari">Cari</a>
+</div>
+    <div id="konten-kepala">
+        <div id="judul"><a href="/index.html"><b>Rubrik Informatika</b></a></div>
+        <div id="subjudul">Sebuah catatan juang seorang mahasiswa informatika</div>
+        <div class="flex-img">
+            <a href="#"><img src="/assets/img/facebook.png"></a>
+            <a href="#"><img src="/assets/img/twitter.png"></a>
+            <a href="#"><img src="/assets/img/linkedin.png"></a>
+        </div>
+    </div>
+</div>

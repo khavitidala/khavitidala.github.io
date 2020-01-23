@@ -1,0 +1,43 @@
+---
+layout: default
+comments: true
+---
+<div id="dekor-kontainer">
+    <div id="d-1"></div>
+    <div id="d-2"></div>
+    <div id="d-3"></div>
+</div>
+<div class="window-post">
+    <div class="main-post">
+        <div id="judul-post">
+            <h1>{{ page.title }}</h1>
+            <h6>Oleh: Ryan Abdurohman; {{ page.date | date: "%c" }}</h6>
+            <h6>Kategori: {{ page.categories }}</h6>
+        </div>
+        <div id="isi-post">
+            {{ content }}
+        </div>
+        <div id="koment-pos">
+            {% if page.comments %} 
+            {% include disqus_comments.html %} 
+            {% endif %}
+        </div>
+    </div>
+    <div class="recent-post">
+        <h3>Unggahan Terbaru</h3>
+    </div>
+</div>
+<!--
+            <a href="{{ page.url }}"><h2>{{ page.title }}</h2></a>
+            <h6>Oleh: Ryan Abdrohman, Kategori: {{ page.categories }}</h6>
+        <//div>div>
+        {{ content }}
+        <div class="komentar">
+            <form action="" method="POST">
+                <H3>Komentar</H3>
+                Nama: <input type="text"><br>
+                Komentar :<br>
+                <textarea></textarea>
+            </form>
+        </div>
+-->
