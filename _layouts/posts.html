@@ -25,6 +25,12 @@ comments: true
     </div>
     <div class="recent-post">
         <h3>Unggahan Terbaru</h3>
+        test
+        <ul>
+            {% for post in site.posts %}
+            <li>{{ post.title }}</li>
+            {% endfor %}
+        </ul>
     </div>
 </div>
 <!--

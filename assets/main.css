@@ -143,33 +143,40 @@ h6 {
     padding-top: 2%;
 }
 .control-main h1 {
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     padding-bottom: 0.5%;
 }
 .row {
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 .main {
+    font-family: 'Raleway', sans-serif;
     border-top: thin solid white;
     padding-top: 2%;
     display: block;
     max-width: 60%;
 }
 .main a {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: white;
 } 
 .main a:link, a:visited {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     justify-content: center;
 }
 .main a:hover {
+    font-family: 'Raleway', sans-serif;
     color : rgb(8, 37, 65);
 }
 .tanggal {
+    font-family: 'Raleway', sans-serif;
     width: 20%;
     float: left;
     padding: 2vw 2vw;
@@ -178,6 +185,7 @@ h6 {
     font-size: 1.5vw;
 }
 .judulpos {
+    font-family: 'Raleway', sans-serif;
     width: 80%;
     float: left;
     line-height: 2.7vw;
@@ -189,6 +197,7 @@ h6 {
     border-bottom: thin solid black;
 }
 .judulpos p {
+    font-family: 'Raleway', sans-serif;
     font-size: 1vw;
     line-height: 1.7vw;
     text-align: justify;
