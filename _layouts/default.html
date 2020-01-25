@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
     <head>
+    <meta  property="fb:app_id"  content="2673969389319030"  />
+    <meta  property="fb:admins"  content="2673969389319030"/>
+    <meta  property="og:url"  content="{{ site.url | absolute_url }}"  />
+    <meta  property="og:title"  content="{{ site.title}}"  />
+    <meta  property="og:description"  content="{{ site.description}}"  />
+    <meta  property="og:image"  content="IMG"  />
     {% include head.html %}
     </head>
     <body>
+        {% include facebook.html %}
         {% include header.html %}
         {{ content }}
         {% include footer.html %}

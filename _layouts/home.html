@@ -1,68 +1,54 @@
 ---
 layout : default
 ---
+<div class="dekor-bulet">
+    <div class="circl" style="background-color: rgb(129, 6, 123); width: 15%;"></div>
+    <div class="circl" style="background-color: rgb(255, 252, 57);width: 30%;"></div>
+    <div class="circl" style="background-color: rgb(223, 35, 35);width: 25%;"></div>
+    <div class="circl" style="background-color: rgb(23, 93, 223);width: 20%;"></div>
+    <div class="circl" style="background-color: rgb(129, 6, 123);width: 10%;"></div>
+</div>
 <div class="control-main">
-    <h1>UNGGAHAN</h1>
     <div class="row">
-    <div class="main">
-    {% for post in paginator.posts %}
-    <div class="tanggal">
-        <h3>{{ post.date | date : "%d" }}</h3>
-        <h3>{{ post.date | date : "%b" }}</h3>
-    </div>
-    <div class="judulpos" >
-        <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-        <h6>Oleh: Ryan Abdrohman, Kategori: {{ post.categories }}</h6>
-        <p>{{ post.excerpt | slice: 0, 300 }}<a href="{{ post.url }}">[...]</a> </p>
-    </div>
-    {% endfor %}
-    </div>   
-</div> 
+        {% for post in paginator.posts %}
+        <div class="main">
+            <div class="tanggal">
+                <h3>{{ post.date | date : "%d" }}</h3>
+                <h3>{{ post.date | date : "%b" }}</h3>
+            </div>
+            <div class="judulpos" >
+                <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+                <h6>Oleh: Ryan Abdurohman, Kategori: {{ page.categories | join: ", "}}</h6>
+                <p>{{ post.desc | slice: 0, 320 }}<a href="{{ post.url }}">[...]</a> </p>
+            </div>
+        </div> 
+        {% endfor %}
+    </div> 
 
 
 {% if paginator.total_pages > 1 %}
-<div class="laman">
-    {% if paginator.previous_page %}
-    <div class="pg"><a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a></div>
-    {% else %}
-    <div class="pg">&laquo; Prev</div>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <div class="pg">{{ page }}</div>
-        {% elsif page == 1 %}
-        <div class="pg"><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></div>
+    <div class="laman">
+        {% if paginator.previous_page %}
+        <div class="pg"><a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a></div>
         {% else %}
-        <div class="pg"><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></div>
+        <div class="pg">&laquo; Prev</div>
         {% endif %}
-    {% endfor %}
-    
-    {% if paginator.next_page %}
-    <div class="pg"><a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a></div>
-    {% else %}
-    <div class="pg">Next &raquo;</div>
-    {% endif %}
-</div>
+
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+            <div class="pg">{{ page }}</div>
+            {% elsif page == 1 %}
+            <div class="pg"><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></div>
+            {% else %}
+            <div class="pg"><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></div>
+            {% endif %}
+        {% endfor %}
+        
+        {% if paginator.next_page %}
+        <div class="pg"><a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a></div>
+        {% else %}
+        <div class="pg">Next &raquo;</div>
+        {% endif %}
+    </div>
 {% endif %}
 </div>
-
-<!-- <div class="row">
-    <div class="main">
-        {% for post in site.posts %}
-        <div class="daftar-pos">
-            <a href="{{ post.url }}">
-            <div class="tanggal">
-                <h3>13</h3>
-                <h3>Jan</h3>
-            </div>
-            <div class="judulpos">
-                <h2>{{ post.title }}</h2>
-                <h6>Oleh: Ryan Abdrohman, Kategori: {{ post.categories }}</h6>
-                <p>{{ post.excerpt | slice: 0, 255 }}</p>
-            </div></a>
-        </div>
-        {% endfor %}
-    </div>
-    {%- include sidebar.html -%}
-</div> -->

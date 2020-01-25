@@ -2,48 +2,37 @@
 layout: default
 comments: true
 ---
-<div id="dekor-kontainer">
-    <div id="d-1"></div>
-    <div id="d-2"></div>
-    <div id="d-3"></div>
-</div>
+
 <div class="window-post">
+    <div class="grid-col-1"></div>
     <div class="main-post">
         <div id="judul-post">
             <h1>{{ page.title }}</h1>
-            <h6>Oleh: Ryan Abdurohman; {{ page.date | date: "%c" }}</h6>
-            <h6>Kategori: {{ page.categories }}</h6>
+        </div>
+            <div id="dekor-container">
+                <div id="warna-1"></div>
+                <div id="warna-2"></div>
+                <div id="warna-3"></div>
+            </div>
+        <div id="judul-post">
+            <h6>Ryan Abdurohman; {{ page.date | date: "%A" }}, {{ page.date | date_to_long_string }}</h6>
+            <h6>{{ page.categories | join: ", "}}</h6>
         </div>
         <div id="isi-post">
             {{ content }}
         </div>
         <div id="koment-pos">
-            {% if page.comments %} 
-            {% include disqus_comments.html %} 
-            {% endif %}
+            <div class="fb-comments" data-href="{{ site.url | absolute_url }}" data-width="100%" data-numposts="5" style="font-size: 1.25vw;"></div>
         </div>
     </div>
+    <div class="grid-col-2"></div>
     <div class="recent-post">
-        <h3>Unggahan Terbaru</h3>
-        test
-        <ul>
-            {% for post in site.posts %}
-            <li>{{ post.title }}</li>
-            {% endfor %}
-        </ul>
+        <h1>Unggahan Terbaru</h1>
+        {% for unggah in site.posts | sort: "date" | reverse | limit: 10 %}
+            <ul>
+                <a href="{{ unggah.url }}"><li>{{ unggah.title }}</li></a>
+            </ul>
+        {% endfor %}
     </div>
+    <div class="grid-col-3"></div>
 </div>
-<!--
-            <a href="{{ page.url }}"><h2>{{ page.title }}</h2></a>
-            <h6>Oleh: Ryan Abdrohman, Kategori: {{ page.categories }}</h6>
-        <//div>div>
-        {{ content }}
-        <div class="komentar">
-            <form action="" method="POST">
-                <H3>Komentar</H3>
-                Nama: <input type="text"><br>
-                Komentar :<br>
-                <textarea></textarea>
-            </form>
-        </div>
--->
