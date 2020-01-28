@@ -1,18 +1,272 @@
 /* Media Queries */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .main {
         width: 90%;
     }
     .window-post {
         flex-direction: column;
     }
+    .kepala {
+        height: 100%;
+        padding-bottom: 2vw;
+    }
+    .control-main {
+        height: auto;
+    }
+    html, body {
+        height: 100%;
+        width: auto;
+    }
+    .navi {
+        display: none;
+    }
+    .navig {
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        background-color:black;
+    }
+    .navig a {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1.5vw 1.3vw;
+        text-decoration: none;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 3vw;
+    }
+    #carig {
+        display: none;
+    }
+    .tanggal {
+        width: 10%;
+        float: left;
+        padding: 2vw 2vw;
+        background-color: rgb(49, 161, 246);
+        text-align: center;
+    }
+    .tanggal h3 {
+        font-size: 3vw;
+    }
+    .judulpos {
+        width: 90%;
+        float: left;
+        line-height: 3vw;
+        padding-top: 0vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
+        padding-right: 1vw; 
+        /*background-color: rgb(35, 37, 39);*/ 
+        border-bottom: thin solid black;
+    }
+    .judulpos p {
+        font-size: 3vw;
+        line-height: 3.5vw;
+        text-align: justify;
+    }
+    .judulpos h2 {
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    .judulpos h6 {
+        font-size: 2vw;
+        line-height:4vw;
+        color: rgb(49, 161, 246);
+    }
+    #judul {
+        font-size: 10vw;
+        color: white;
+        text-align: center;
+    }
+    #subjudul {
+        font-family: 'Sacramento', cursive;
+        font-size: 5vw;
+        padding-top: 0.2vw;
+        color: white;
+        text-align: center;
+        padding-bottom: 1.4vw;
+    }
+    /*Postingan*/
+    #judul-post {
+        max-width: inherit;
+        text-align: left;
+        line-height: 3.3vw;
+        display: block;
+    }
+    #judul-post h1 {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+    #judul-post h6 {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    #isi-post {
+        max-width: inherit;
+        padding-top: 2vw;
+        text-align: justify;
+        display: block;
+    }
+    #komen-pos {
+        margin-top: 1vw;
+        width: 100%;
+    }
+    
+    /*Format Postingan*/
+    #isi-post {
+        font-size: 3vw;
+    }
+    #isi-post img, figure {
+        max-width: 100%;
+    }
+    #komen-pos {
+        font-size: 1.25vw;
+    }
+    #isi-post h1 {
+        font-size: 6vw;
+    }
+    #isi-post h2 {
+        font-size: 5vw;
+    }
+    #isi-post h3 {
+        font-size: 4.4vw;
+    }
+    #isi-post h4 {
+        font-size: 4vw;
+    }
+    #isi-post h5 {
+        font-size: 3.66vw;
+    }
+    #isi-post h6 {
+        font-size: 3.3vw;
+    }
+    .recent-post li {
+        font-size: 3vw;
+    }
+    .recent-post h1 {
+        font-size: 6vw;
+    }
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 901px) {
+    #carig {
+        display: none;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
     .main {
         width: 60%;
     }
     .window-post {
         flex-direction: row;
+    }
+    .kepala {
+        height: 100%;
+    }
+    .control-main {
+        min-height: 100%;
+    }
+    .navi {
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        /* background-color:rgb(8, 37, 65);*/
+        background-color: transparent;
+        font-size: 1.5vw;
+    }
+    .navi a {
+        float:left;
+        display: block;
+        padding: 1.5vw 1.3vw;
+        text-decoration: none;
+        color: white;
+    }
+    .navig {
+        display: none;
+    }
+    .tanggal {
+        width: 20%;
+        float: left;
+        padding: 2vw 2vw;
+        background-color: rgb(49, 161, 246);
+        text-align: center;
+    }
+    .tanggal h3 {
+        font-size: 3vw;
+    }
+    .judulpos {
+        width: 80%;
+        float: left;
+        line-height: 3vw;
+        padding-top: 0vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
+        padding-right: 1vw; 
+        /*background-color: rgb(35, 37, 39);*/ 
+        border-bottom: thin solid black;
+        font-size: 1.5vw;
+    }
+    .judulpos p {
+        line-height: 2vw;
+        text-align: justify;
+    }
+    .judulpos h2 {
+        font-size: 3vw;
+        line-height: 3.3vw;
+    }
+    #judul {
+        font-size: 6vw;
+        color: white;
+        text-align: center;
+    }
+    #subjudul {
+        font-family: 'Sacramento', cursive;
+        font-size: 3vw;
+        padding-top: 0.2vw;
+        color: white;
+        text-align: center;
+        padding-bottom: 1.4vw;
+    }
+    /*Postingan*/
+    #judul-post {
+        max-width: inherit;
+        text-align: left;
+        line-height: 3.3vw;
+        display: block;
+    }
+    #judul-post h1 {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+    }
+    #judul-post h6 {
+        line-height: 1.5vw;
+    }
+    #isi-post {
+        max-width: inherit;
+        padding-top: 2vw;
+        text-align: justify;
+        display: block;
+    }
+    #komen-pos {
+        margin-top: 1vw;
+        width: 100%;
+    }
+    
+    /*Format Postingan*/
+    #isi-post {
+        font-size: 1.25vw;
+    }
+    #isi-post img, figure {
+        max-width: 100%;
+    }
+    #komen-pos {
+        font-size: 1.25vw;
+    }
+    .recent-post li {
+        font-size: 1.5vw;
     }
 }
 
@@ -20,11 +274,6 @@
 * {
     box-sizing: border-box;
     margin: 0px 0px 0px 0px;
-}
-html, body {
-    /*background-color:rgb(8, 37, 65);*/
-    height: 100%;
-    width: 100%;
 }
 h1 {
     font-size: 2.5vw;
@@ -51,20 +300,7 @@ h6 {
     width: 100%;
     height: auto;
 }
-.navi {
-    font-family: 'Raleway', sans-serif;
-    overflow: hidden;
-    /* background-color:rgb(8, 37, 65);*/
-    background-color: transparent;
-    font-size: 1.5vw;
-}
-.navi a {
-    float:left;
-    display: block;
-    padding: 1.5vw 1.3vw;
-    text-decoration: none;
-    color: white;
-}
+
 .navi a:hover {
     background-color: rgb(6, 27, 47);
 }
@@ -100,7 +336,6 @@ h6 {
     font-family: 'Raleway', sans-serif;
     background: url('/assets/img/bg.jpg') no-repeat center fixed;
     background-size: cover;
-    height: 100%;
     /*max-width: 100%;
     height: auto;
     background-color:rgb(8, 37, 65);
@@ -138,19 +373,6 @@ h6 {
     max-width: 4vw;
     padding-left: 1vw;
 }
-#judul {
-    font-size: 6vw;
-    color: white;
-    text-align: center;
-}
-#subjudul {
-    font-family: 'Sacramento', cursive;
-    font-size: 3vw;
-    padding-top: 0.2vw;
-    color: white;
-    text-align: center;
-    padding-bottom: 1.4vw;
-}
 
 /* Main Content */
 .control-main {
@@ -186,34 +408,7 @@ h6 {
 .main a:hover {
     color : rgb(8, 37, 65);
 }
-.tanggal {
-    width: 20%;
-    float: left;
-    padding: 2vw 2vw;
-    background-color: rgb(49, 161, 246);
-    text-align: center;
-}
-.tanggal h3 {
-    font-size: 3vw;
-}
-.judulpos {
-    width: 80%;
-    float: left;
-    line-height: 3vw;
-    padding-top: 0vw;
-    padding-left: 1vw;
-    padding-bottom: 1vw;
-    padding-right: 1vw; 
-    /*background-color: rgb(35, 37, 39);*/ 
-    border-bottom: thin solid black;
-}
-.judulpos p {
-    line-height: 2vw;
-    text-align: justify;
-}
-.judulpos h2 {
-    font-size: 3vw;
-}
+
 /* Postingan */
 #dekor-kontainer {
     display: flex;
@@ -296,40 +491,6 @@ h6 {
     flex: 20%;
     background-color: maroon;
 }
-#judul-post {
-    max-width: inherit;
-    text-align: left;
-    line-height: 3.3vw;
-    display: block;
-}
-#judul-post h1 {
-    font-size: 3.5vw;
-    line-height: 3.5vw;
-}
-#judul-post h6 {
-    line-height: 1.5vw;
-}
-#isi-post {
-    max-width: inherit;
-    padding-top: 2vw;
-    text-align: justify;
-    display: block;
-}
-#komen-pos {
-    margin-top: 1vw;
-    width: 100%;
-}
-
-/*ormat Postingan*/
-#isi-post {
-    font-size: 1.25vw;
-}
-#isi-post img, figure {
-    max-width: 100%;
-}
-#komen-pos {
-    font-size: 1.25vw;
-}
 
 /* Recent Post Side Bar*/
 
@@ -354,7 +515,6 @@ h6 {
 }
 .recent-post li {
     margin-top: 0.2vw;
-    font-size: 1.5vw;
     text-align: left;
     width: 100%;
     background-color: teal;

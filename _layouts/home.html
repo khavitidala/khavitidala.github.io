@@ -9,6 +9,27 @@ layout : default
     <div class="circl" style="background-color: rgb(129, 6, 123);width: 10%;"></div>
 </div>
 <div class="control-main">
+    <script>
+        function tampilg() {
+            if (document.getElementById("carig").style.display=="none") {
+                document.getElementById("carig").style.display="block";
+                document.getElementsByName("nyarig").innerHTML="Batal Mencari";
+            } else {
+                document.getElementById("carig").style.display="none";
+        
+            }
+        }
+        </script>
+    <div class="navig">
+        <a href="{{ site.url | absolute_url }}">Beranda</a>
+        <a href="/tentang/">Tentang</a>
+        <a href="/kategori/">Kategori</a>
+        <a style="cursor: pointer;" onclick="tampilg()" name="nyarig">Cari</a>
+    </div>
+    <div id="carig">
+        <script async src="https://cse.google.com/cse.js?cx=017547081945986719728:tyoyjbvdc34"></script>
+        <div class="gcse-search"></div>
+    </div>
     <div class="row">
         {% for post in paginator.posts %}
         <div class="main">
@@ -18,7 +39,7 @@ layout : default
             </div>
             <div class="judulpos" >
                 <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-                <h6>Oleh: Ryan Abdurohman, Kategori: {{ page.categories | join: ", "}}</h6>
+                <h6>Oleh: Ryan Abdurohman, Kategori: {{ post.categories | join: ", "}}</h6>
                 <p>{{ post.desc | slice: 0, 320 }}<a href="{{ post.url }}">[...]</a> </p>
             </div>
         </div> 

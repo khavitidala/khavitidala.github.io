@@ -4,6 +4,27 @@ comments: true
 ---
 
 <div class="window-post">
+    <script>
+        function tampilg() {
+            if (document.getElementById("carig").style.display=="none") {
+                document.getElementById("carig").style.display="block";
+                document.getElementsByName("nyarig").innerHTML="Batal Mencari";
+            } else {
+                document.getElementById("carig").style.display="none";
+        
+            }
+        }
+        </script>
+    <div class="navig">
+        <a href="{{ site.url | absolute_url }}">Beranda</a>
+        <a href="/tentang/">Tentang</a>
+        <a href="/kategori/">Kategori</a>
+        <a style="cursor: pointer;" onclick="tampilg()" name="nyarig">Cari</a>
+    </div>
+    <div id="carig">
+        <script async src="https://cse.google.com/cse.js?cx=017547081945986719728:tyoyjbvdc34"></script>
+        <div class="gcse-search"></div>
+    </div>
     <div class="grid-col-1"></div>
     <div class="main-post">
         <div id="judul-post">
