@@ -1,10 +1,9 @@
-
-  ---
-  layout: ngasal
-  title:  "ryan"
-  comments: false
-  permalink: /ryan/
-  ---
+---
+layout: ngasal
+title:  "ryan"
+comments: false
+permalink: /ryan/
+---
   |     | tanggal              | judul                                                                                    | url                                                                                                                                                                                          |
 |----:|:---------------------|:-----------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 120 | Selasa, 22 Juni 2021 | FOTO JOKOWI BERTULISKAN : KALIAN SIAP SAYA PIMPIN TIGA PERIODE                           | https://saberhoaks.jabarprov.go.id/v2/klarifikasi/detail/PTN001467/FOTO-JOKOWI-BERTULISKAN-:-KALIAN-SIAP-SAYA-PIMPIN-TIGA-PERIODE                                                            |
